@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+<link rel="stylesheet" href="css/style.css">
+    <! Note : line 8-26 na b likhe to chal jayega, kyuki we have used external CSS . See line 6 >
+    <style media="screen">
+     body{
+       background-color : khaki;
+     }
+     hr {
+        background-color : none ;
+        <! border style yahan pe sirf ek tarah se use kiye hain, see devdoc, wahan different uses diye hai->
+        border-style: dotted none none;
+        <! top  bottom left right , ko b bahot tarike se use kr skte hain->
+        border-top-style: dotted;
+        border-color: none;
+        border-width: 5px;
+        height: 2px;
+     }
+     img{
+       height: 200px;
+       width: 23%;
+     }
+    </style>
+  </head>
+  <body>
+    <h1 style="color : #a52a2a;">Hello once again, Mr Stranger </h1>
+    <h2>This is Just a Demo form.Do not enter any details. </h2>
+    <h3>Just go through and clink on the link at the bottom .</h3>
+    <p>India</p>
+    <p>Bharat</p>
+    <p>Indus</p>
+    <p>Aryavrat</p>
+    <p>Hindustan</p>
+    <p>Jai Hind</p>
+    <form class="" action="index.html" method="post">
+      <label> First name :</label>
+      <input type="text" name="" value=""><br>
+      <br>
+      <label> Password :</label>
+      <input type="password" name="" value="">
+      <input type="submit" name=""><br>
+      <br>
+      <label>Date   :    </label>
+      <input type="date" name="" value=""><br>
+      <br>
+      <label>Select : </label>
+      <label> Male </label>
+      <input type="radio" name="" value="">
+      <label> Female </label>
+      <input type="radio" name="" value=""><br>
+      <br>
+      <label> Price Range</label>
+      <input type="range" name="" value=""><br>
+      <br>
+      <label>Choose file :</label>
+      <input type="file" name="" value=""><br>
+      <br>
+      <label> Checkbox :</label>
+      <input type="checkbox" name="" value=""> <br>
+      <br>
+      <label>Search </label>
+      <input type="search" name="" value=""><br>
+      <br>
+      <label>Reset fields : </label>
+      <input type="reset" name="" >
+
+    </form>
+    <br>
+    <br>
+    <a href="hobbies.html">Previous</a><br>
+    <a href="index.html"> Back to main </a><br>
+    <br>
+    <h4> We can be a good friend. <a href="ContactDetail.html"> Click Here </a></h4>
+  </body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title> Contact Me </title>
+    <link rel="stylesheet" href="css/style.css">
+    <! Note : line 8-26 na b likhe to chal jayega, kyuki we have used external CSS . See line 6 >
+    <style media="screen">
+     body{
+       background-color : khaki;
+     }
+     hr {
+        background-color : none ;
+        <! border style yahan pe sirf ek tarah se use kiye hain, see devdoc, wahan different uses diye hai->
+        border-style: dotted none none;
+        <! top  bottom left right , ko b bahot tarike se use kr skte hain->
+        border-top-style: dotted;
+        border-color: none;
+        border-width: 5px;
+        height: 2px;
+     }
+     img{
+       height: 200px;
+       width: 23%;
+     }
+    </style>
+  </head>
+
+  <body>
+<h1 style="color : #a52a2a;">My contact details</h1>
+<p>Aurangabad , BIhar</p>
+<p>vishal2amit@gmail.com</p>
+<p>8285530709</p>
+<br>
+<hr>
+<h4>Please fill your details. </h4>
+<form class="" action="mailto:vishal2amit@gmail.com" method="post" enctype="text/plain">
+  <label> Your Name :</label>
+  <input type="text" name="YourName" value=""><br>
+  <br>
+  <label>Your email :</label>
+  <input type="email" name="YourEmail" value=""><br>
+  <br>
+  <label>Waiting for your awsome message :</label><br>
+  <textarea name="name" rows="10" cols="40"></textarea><br>
+  <input type="submit" name="" > <br>
+  <br>
+  <input type="reset" name="">
+
+</form>
+<br>
+<br>
+<a href="hobbies.html">Previous</a><br>
+<a href="index.html"> Back to main </a>
+  </body>
+</html>

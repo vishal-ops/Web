@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title> 💘 🥰 My first browser website interface </title>
+<! here STYLE is CSS and this Internal CSS . So within style, kisi b chiz ko declare kr k color de skte hai, it will work for the entire webpage.>
+<!    Line 7 to 27 internal CSS hai
+  <!<style media="screen"
+   body{
+     background-color : khaki;
+   }
+   hr {
+      background-color : none ;
+      <! border style yahan pe sirf ek tarah se use kiye hain, see devdoc, wahan different uses diye hai-
+      border-style: dotted none none;
+      <! top  bottom left right , ko b bahot tarike se use kr skte hain-
+      border-top-style: dotted;
+      border-color: none;
+      border-width: 5px;
+      height: 2px;
+   }
+   img{
+     height: 200px;
+     width: 23%;
+   }
+ </style>
+
+<! Now  Using External CSS . Isme style wala part jo uper likha hai , wo ek separate file me likhenge and yahan se call karenge>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<!   In body tag , we can apply css , as body conatins entire html code . Note . style is given in body tag which is css>
+<! Lekin best ye hai ki hum css wala part head me hi likh de, wo sare sare jagah apply kr dega. Kyuki agar 1000 body , tag etc hue , then sab jagah manually bahut time lagega>
+<!background-color , this is mandatory keyword for applying color>
+<!body style="background-color : khaki;">
+
+<body >
+  <div></div>
+  <span></span>
+  <h1 style="text-align: center;"> Welcome to this lovely nature world starnger. </h1>
+
+  <h4> We can be a good friend. <a  href="ContactDetail.html"> Click Here </a></h4>
+  <table cellspacing = "10">
+    <tr>
+      <td ><img height = "200" src = https://travelandleisureindia.in/wp-content/uploads/2019/10/Feature-image-West-Bengal-Hill-Stations.jpg /></td>
+      <td >            </td>
+      <td  ><h1>Hi Mr Stranger. </h1>
+      <p><em>You are the creator of your own <strong>destiny</strong> </em></p>
+      <p> Welocome to your own world </p>
+      <p><strong><em><a href="https://www.facebook.com/">You can message me on facebook. Just Click </a></em></strong></p></td>
+
+    </tr>
+  </table>
+  <h1>Hi Mr Stranger. </h1>
+  <p><em>You are the creator of your own <strong>destiny</strong> </em></p>
+  <p> Welocome to your own world </p>
+  <p><strong><em><a href="https://www.facebook.com/">You can message me on facebook. Just Click </a></em></strong></p>
+  <hr>
+  <p>It is Your Bulb. Just click it stranger.</p>
+
+<button onclick="document.getElementById('myImage').src='https://d14nx13ylsx7x8.cloudfront.net/lesson_image_blocks/assets/000/001/413/original/pic_bulbon.gif'">Turn on the light</button>
+
+<img id="myImage" src="https://www.w3schools.com/js/pic_bulboff.gif" style="width:100px">
+
+<button onclick="document.getElementById('myImage').src='https://www.w3schools.com/js/pic_bulboff.gif'">Turn off the light</button>
+
+  <hr>
+  <h3> Books and teaching </h3>
+  <! Unordered list>
+  <ul>
+    <li>Assets which will make you rich</li>
+     <!Image from website >
+    <img height="400" src="https://m.media-amazon.com/images/I/51NuMV9SJ8L._SL500_.jpg" alt="Robert kiyosaki ">
+     <!Image from same directory of this html file>
+    <img src="Robert kiyosaki" alt="">
+    <! Image from file or folder which is at different location in system>
+    <img  height="300" src="Images/Robert Kiyosaki" alt="">
+    <li><a href="https://www.richdad.com/">Rich dad poor dad</a> </li>
+  </ul>
+  <hr>
+  <h3>My Hobbies </h3>
+   <!Ordered list>
+  <ol>
+    <li><a href="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.icc-cricket.com%2F&psig=AOvVaw20rMlg0OJ1Ttc5c-pA1NOz&ust=1595706940228000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCKiztd3V5uoCFQAAAAAdAAAAABAD">Cricket</a></li>
+    <li>Martial arts</li>
+    <li>Yoga</li>
+    <li><a href="https://www.sciencemag.org/sites/default/files/styles/article_main_large/public/1036780592-1280x720.jpg?itok=QykjHcAC">Running</a></li>
+    <li>Music </li>
+  </ol>
+  <a href="hobbies.html">My Serious hobbies</a>
+
+  <hr>
+  <h3> My work experience </h3>
+  <! table structure kaise banate hai, isme 3 imp part hai ie : thead,tbody,tfoot >
+  <table border="1">
+    <thead>
+      <tr>
+        <th>Dates</th>
+        <th>Work Details</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>2011-15 </td>
+        <td> Bachelor in Technolgy , Mechanical</td>
+      </tr>
+      <tr>
+        <td> 2016-2020 </td>
+        <td>   Working in TCS </td>
+      </tr>
+    </tbody>
+    <tfoot>
+
+    </tfoot>
+  </table>
+  <! nested table kaise use karte hai see below. 'td' k andar ek aur table dal diye hai , this is nested table concept>
+  <hr>
+  <h3> Skills</h3>
+<table border="1">
+<tr>
+    <td>
+    <table cellspacing = "10">
+      <tr>
+        <td>Automation testing</td>
+        <td>👍👍👍👍</td>
+        <td>                                  </td>
+      </TR>
+      <tr>
+        <td>PL/SQL</td>
+        <td>👍👍👍👍</td>
+      </tr>
+    </table>
+    </td>
+    <td>
+      <table cellspacing = "10" >
+        <tr>
+          <td>Core java</td>
+          <td>👍👍👍</td>
+          <td>                                  </td>
+        </tr>
+        <tr>
+          <td>SQL</td>
+          <td>👍👍👍👍</td>
+        </tr>
+
+      </table>
+    </td>
+  </tr>
+
+</table>
+<br>
+<a href="contact.html"> Demo Contact </a><br>
+<br>
+<h4> We can be a good friend. <a href="ContactDetail.html"> Click Here </a></h4>
+</body>
+
+</html>
